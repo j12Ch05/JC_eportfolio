@@ -1,0 +1,10 @@
+{
+  "description": "Creates a personalized e-portfolio by integrating your CV and showcasing all your GitHub repositories to highlight your projects and skills.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

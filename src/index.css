@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import 'tailwindcss';
+
+:root {
+  --background: #09090f;
+  --foreground: #e4e6f0;
+  --card: #10121a;
+  --card-foreground: #e4e6f0;
+  --primary: #00d9a6;
+  --primary-foreground: #09090f;
+  --secondary: #161924;
+  --secondary-foreground: #a8adc4;
+  --muted: #1a1d2a;
+  --muted-foreground: #6b7499;
+  --accent: #00d9a6;
+  --accent-foreground: #09090f;
+  --border: #1e2236;
+  --ring: #00d9a6;
+  --radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Outfit', sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted-foreground);
+}
+
+.font-display {
+  font-family: 'DM Serif Display', serif;
+}
+
+.font-mono-code {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.typewriter-caret {
+  display: inline-block;
+  width: 3px;
+  height: 0.8em;
+  margin-left: 0.08em;
+  vertical-align: -0.04em;
+  background: var(--primary);
+  animation: caret-blink 1s step-end infinite;
+}
+
+@keyframes caret-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .typewriter-caret {
+    animation-duration: 2s;
+  }
+}
+
+.repo-marquee {
+  overflow: hidden;
+}
+
+.repo-marquee-track {
+  display: flex;
+  width: max-content;
+  gap: 1.25rem;
+  animation: repo-marquee linear infinite;
+  will-change: transform;
+}
+
+.repo-marquee-card {
+  flex: none;
+  width: min(85vw, 22rem);
+}
+
+@media (min-width: 640px) {
+  .repo-marquee-card {
+    width: 20rem;
+  }
+}
+
+@keyframes repo-marquee {
+  to {
+    transform: translateX(calc(-50% - 0.625rem));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .repo-marquee {
+    overflow-x: auto;
+  }
+
+  .repo-marquee-track {
+    animation: none;
+    will-change: auto;
+  }
+
+  .repo-marquee-card[aria-hidden='true'] {
+    display: none;
+  }
+}
