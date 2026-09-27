@@ -184,7 +184,7 @@ function Hero() {
             Get in Touch
           </a>
           <a
-            href="/jean-chamoun-cv.pdf"
+            href={`${import.meta.env.BASE_URL}jean-chamoun-cv.pdf`}
             download="Jean_Chamoun_CV.pdf"
             className="flex items-center gap-2 px-6 py-3 text-sm font-semibold rounded-md transition-all duration-200"
             style={{ border: '1px solid var(--border)', color: 'var(--foreground)', background: 'transparent' }}
