@@ -1,1 +1,2 @@
 jean-chamoun-cv.pdf -filter -diff -merge -text
+favicon.ico -filter -diff -merge -text
