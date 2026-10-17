@@ -235,8 +235,7 @@ function About() {
               Building efficient, responsive software — from mobile to metal.
             </h2>
             <p className="text-base leading-relaxed" style={{ color: 'var(--secondary-foreground)' }}>
-              Computer Science graduate with a strong passion for Android development and hands-on proficiency in Kotlin and Java. Backed by a solid foundation in systems programming (C/C++), algorithm design, and computer graphics, with a deep understanding of memory management, performance optimization, and how software interacts with hardware.
-            </p>
+              Computer Science graduate with a strong passion for Android development and hands-on proficiency in Kotlin and Java. Backed by a solid foundation in systems programming (C/C++), algorithm design, and computer graphics— knowledge that translates directly into building efficient, responsive mobile applications. Well-versed in software engineering fundamentals including OOP, MVC architecture, REST APIs, and database design, complemented by practical experience across full-stack technologies (PHP, React, MySQL). Eager to bring a detail-oriented, performance-conscious approach to an internship or entry-level role in Android development, combining strong technical fundamentals with a genuine drive to build polished, high-quality mobile experiences.</p>
             <p className="text-base leading-relaxed mt-4" style={{ color: 'var(--secondary-foreground)' }}>
               Well-versed in software engineering fundamentals including OOP, MVC architecture, REST APIs, and database design, complemented by practical experience across full-stack technologies (PHP, React, MySQL). Eager to bring a detail-oriented, performance-conscious approach to an internship or entry-level role in Android development.
             </p>
@@ -425,6 +424,12 @@ function Education() {
             org="Lebanese University — Faculty of Science, Fanar"
             period="2023 – 2026"
             detail="Algorithms, Data Structures, Databases, Operating Systems, Software Engineering, Computer Graphics"
+          />
+          <TimelineItem
+            title="M.Sc. in Computer Science"
+            org="Lebanese University — Faculty of Science, Fanar"
+            period="2026 – september 2028"
+            detail="Machine Learning, Deep Learning, Advanced Web Development, Cloud Computing"
           />
           <TimelineItem
             title="Python for Everybody Specialization"
