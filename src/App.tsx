@@ -12,14 +12,14 @@ interface Repo {
 }
 
 const GITHUB_USERNAME = 'j12Ch05'
-const AVATAR_URL = 'https://avatars.githubusercontent.com/u/192689701?v=4'
+const AVATAR_URL = `${import.meta.env.BASE_URL}jc_image.jpeg`
 
 const skills = {
   Languages: ['Kotlin', 'Java', 'C', 'C++', 'C#', 'Python', 'PHP', 'JavaScript', 'TypeScript', 'SQL', 'XML'],
   Frontend: ['React', 'HTML5', 'CSS3', 'TypeScript', 'JavaScript (ES6+)'],
-  'Android Dev': ['Kotlin', 'Java', 'Android Studio'],
+  'Android Dev': ['Kotlin', 'Java'],
   Backend: ['PHP', 'ASP.NET Core', 'MySQL', 'SQL Schema Design'],
-  'Tools & Workflow': ['Git', 'GitHub', 'Jira', 'Confluence', 'OpenGL', 'GLUT'],
+  'Tools & Workflow': ['Git', 'GitHub', 'Jira', 'Confluence'],
   Concepts: ['REST APIs', 'MVC Architecture', 'OOP', 'Database Normalization', 'Backtracking Algorithms'],
 }
 
